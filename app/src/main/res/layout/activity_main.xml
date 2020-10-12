@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#ff2438">
+    android:background="#FFFFFF">
 
     <TextView
         android:id="@+id/textView"
@@ -30,17 +30,20 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/litTextNumberDecimal"
+        android:id="@+id/dollarText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="264dp"
         android:autofillHints="Dollars"
+        android:hint="@string/dollars"
         android:inputType="text|numberDecimal"
+        android:onClick="convertCurrency"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:hint="@string/convert"/>
+        app:layout_constraintTop_toTopOf="parent" />
+
+    
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
